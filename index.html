@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#061f1b">
+
+
+<title>GAUTAM JHA STOCK LEARNERS</title>
+
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --accent: #34d399;
+    --accent2: #0d9488;
+    --text: #ffffff;
+    --muted: #b7d8ce;
+    --line: rgba(52,211,153,.28);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    color: var(--text);
+    background:
+        radial-gradient(circle at 12% 12%, rgba(16,185,129,.22), transparent 30%),
+        radial-gradient(circle at 92% 85%, rgba(20,184,166,.18), transparent 32%),
+        linear-gradient(145deg,#061f1b,#071411 55%,#092b27);
+}
+
+
+.container {
+    max-width: 440px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 22px 25px;
+    border-radius: 30px;
+    border: 1px solid var(--line);
+    background: linear-gradient(145deg,rgba(10,48,39,.97),rgba(5,25,22,.98));
+    box-shadow: 0 30px 90px rgba(0,0,0,.6),
+                0 0 40px rgba(16,185,129,.14);
+    backdrop-filter: blur(20px);
+    animation: cardIn .7s ease both;
+}
+
+
+@keyframes cardIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    border-radius: 999px;
+    color: #b7f7dc;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: rgba(52,211,153,.10);
+    border: 1px solid var(--line);
+}
+
+
+.icon {
+    width: 118px;
+    height: 118px;
+    margin: 5px auto 22px;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+    outline: 4px solid rgba(52,211,153,.2);
+    box-shadow: 0 0 35px rgba(16,185,129,.35);
+    overflow: hidden;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+
+@keyframes float {
+    50% { transform: translateY(-7px); }
+}
+
+
+h1 {
+    font-size: clamp(25px,7vw,34px);
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #6ee7b7;
+    text-shadow: 0 0 20px rgba(52,211,153,.35);
+}
+
+
+.sub {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+#members {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 7px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #b7f7dc;
+    background: rgba(255,255,255,.05);
+    border: 1px solid var(--line);
+}
+
+
+#jbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 64px;
+    padding: 17px;
+    border-radius: 18px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+    background: linear-gradient(105deg,#10b981,#0d9488);
+    box-shadow: 0 12px 35px rgba(16,185,129,.28);
+    transition: .25s;
+    animation: pulse 2.5s infinite;
+}
+
+
+#jbtn:hover {
+    transform: translateY(-3px) scale(1.02);
+}
+
+
+#jbtn:active {
+    transform: scale(.97);
+}
+
+
+@keyframes pulse {
+    50% { box-shadow: 0 15px 45px rgba(16,185,129,.45); }
+}
+
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 9px;
+    margin-top: 22px;
+}
+
+
+.feature {
+    padding: 14px 4px;
+    border-radius: 15px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid var(--line);
+}
+
+
+.feature b {
+    display: block;
+    font-size: 14px;
+    color: #6ee7b7;
+    margin-bottom: 4px;
+}
+
+
+.feature span {
+    font-size: 9px;
+    color: var(--muted);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+.footer {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+@media(max-width:390px) {
+    .container { padding: 25px 17px; }
+    .icon { width: 105px; height: 105px; }
+    #jbtn { font-size: 16px; }
+}
+
+
+@media(prefers-reduced-motion:reduce) {
+    *,*:before,*:after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<main class="container">
+
+
+    <div class="badge">
+        ✦ OFFICIAL TELEGRAM CHANNEL ✦
+    </div>
+
+
+    <div class="icon">
+        <img src="https://krishanads123.vercel.app/logo.png" alt="GAUTAM JHA STOCK LEARNERS Logo">
+    </div>
+
+
+    <h1>GAUTAM JHA STOCK LEARNERS</h1>
+
+
+    <div class="sub">
+        Welcome to GAUTAM JHA STOCK LEARNERS Official Channel
+    </div>
+
+
+    <div id="members">
+        JOIN OUR COMMUNITY
+    </div>
+
+    <div class="sub" id="redirect-note" aria-live="polite">
+        Opening Telegram in <strong id="countdown">5</strong> seconds...
+    </div>
+
+
+    <a id="jbtn"
+       href="https://t.me/+JBkQciwHCANhNmM1"
+       target="_blank"
+       rel="noopener noreferrer">
+       ✈ JOIN CHANNEL
+    </a>
+
+
+    <div class="features">
+
+
+        <div class="feature">
+            <b>OFFICIAL</b>
+            <span>CHANNEL</span>
+        </div>
+
+
+        <div class="feature">
+            <b>INSTANT</b>
+            <span>ACCESS</span>
+        </div>
+
+
+        <div class="feature">
+            <b>FREE</b>
+            <span>JOINING</span>
+        </div>
+
+
+    </div>
+
+
+    <div class="footer">
+        Opens Telegram • Tap the button to join
+        GAUTAM JHA STOCK LEARNERS
+    </div>
+
+
+</main>
+
+
+<script>
+(function () {
+    const telegramUrl = "https://t.me/+JBkQciwHCANhNmM1";
+    const countdown = document.getElementById("countdown");
+    let secondsLeft = 5;
+
+    const timer = window.setInterval(function () {
+        secondsLeft -= 1;
+        if (countdown) countdown.textContent = String(secondsLeft);
+
+        if (secondsLeft <= 0) {
+            window.clearInterval(timer);
+            window.location.href = telegramUrl;
+        }
+    }, 1000);
+})();
+</script>
+
+</body>
+</html>
